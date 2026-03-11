@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="Character">
+
+    </select>
+
+    <select name="" id="Power">
+
+    </select>
+
+
+    <script>
+        let arr = ["Suhail", "Vegeta", "Levi", "Anya", "Bankai"];
+
+        arr.forEach(op => {
+            let ele = document.createElement("option");
+            ele.value = op; 
+            ele.innerHTML = op;
+            document.getElementById("Character").appendChild(ele);
+        });
+
+        let arr1 = ["UE", "UI", "Strength", "SSJ God"];
+
+        arr1.forEach(op => {
+            let ele = document.createElement("option");
+            ele.value = op; 
+            ele.innerHTML = op;
+            document.getElementById("Power").appendChild(ele);
+        });
+
+
+
+    </script>
+</body>
+</html>
